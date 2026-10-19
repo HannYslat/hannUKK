@@ -41,9 +41,9 @@ promot ke 2
 
 # 3. VLAN CONFIGURATION
 /interface vlan
-add name=VLAN10-Guru_Admin vlan-id=10 interface=ether2-LAN
-add name=VLAN20-Siswa vlan-id=20 interface=ether2-LAN
-add name=VLAN30-Server vlan-id=30 interface=ether2-LAN
+add name=Guru_Admin vlan-id=10 interface=ether2-LAN
+add name=Siswa vlan-id=20 interface=ether2-LAN
+add name=Server vlan-id=30 interface=ether2-LAN
 
 # 4. IP ADDRESS GATEWAY
 /ip address

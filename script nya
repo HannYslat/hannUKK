@@ -1,31 +1,4 @@
-gatau sih ni yg bener yg mana 
-
-prompt ke 1
-
-# ====================================================
-# MIKROTIK BASIC CONFIGURATION SCRIPT
-# Generated: 19/10/2026, 05.17.25
-# Target Router Identity: Mikrotik-....
-# ====================================================
-
-# 1. SETTING ROUTER IDENTITY
-/system identity set name="Mikrotik-Raihan"
-
-# 2. RENAMING INTERFACES
-/interface set [ find default-name=ether1 ] name="ether1-INET"
-/interface set [ find default-name=ether2 ] name="ether2-LAN"
-
-# 4. DHCP CLIENT (SUMBER INTERNET / WAN)
-/ip dhcp-client add interface="ether1-INET" disabled=no add-default-route=yes use-peer-dns=yes use-peer-ntp=yes comment="Internet WAN (ether1-WAN)"
-
-# 6. DNS CONFIGURATION
-/ip dns set servers=8.8.8.8,8.8.4.4 allow-remote-requests=yes
-
-# 7. FIREWALL NAT (MASQUERADE INTERNET SHARING)
-/ip firewall nat add chain=srcnat out-interface="ether1-WAN" action=masquerade comment="Masquerade Internet ether1-WAN"
-
-
-promot ke 2
+tinggal salin aja hbs tu paste di terminal mikrotik
 
 # ====================================================
 # MIKROTIK BASIC CONFIGURATION + VLAN + DHCP + INTERNET

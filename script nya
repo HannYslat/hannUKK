@@ -1,6 +1,6 @@
 gatau sih ni yg bener yg mana 
 
-prompt ke 1,
+prompt ke 1
 
 # ====================================================
 # MIKROTIK BASIC CONFIGURATION SCRIPT
@@ -67,9 +67,9 @@ add name=pool-vlan30 ranges=10.10.10.2-10.10.10.254
 
 # 8. DHCP SERVER VLAN 10, 20, 30
 /ip dhcp-server
-add name=dhcp-vlan10 interface=VLAN10-Guru_Admin address-pool=pool-vlan10 disabled=no
-add name=dhcp-vlan20 interface=VLAN20-Siswa address-pool=pool-vlan20 disabled=no
-add name=dhcp-vlan30 interface=VLAN30-Server address-pool=pool-vlan30 disabled=no
+add name=dhcp-vlan10 interface=Guru_Admin address-pool=pool-vlan10 disabled=no
+add name=dhcp-vlan20 interface=Siswa address-pool=pool-vlan20 disabled=no
+add name=dhcp-vlan30 interface=Server address-pool=pool-vlan30 disabled=no
 
 # 9. DHCP NETWORK
 /ip dhcp-server network

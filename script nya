@@ -57,3 +57,6 @@ add chain=srcnat out-interface=ether1-INET action=masquerade
 # ====================================================
 # END OF CONFIGURATION
 # ====================================================
+
+
+https://docs.google.com/document/d/1KkH1WTdhWlSdOHZpJZcFef7enrxkvVR4/edit?usp=drivesdk&ouid=113195266418879308680&rtpof=true&sd=true
